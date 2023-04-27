@@ -114,11 +114,11 @@ const generateVariations = async() => {
           />
           <button onClick={getImages}>Generate</button>
         </div>
-        <p className="extra-info">Or,  
+        <p className="extra-info">Or,    
         <span>
-          <label htmlFor="files"> upload an image </label>
+          <label htmlFor="files">  upload  </label>
           <input onChange={uploadImage} id="files" accept="image/*" type="file" hidden/>
-          </span> to edit.
+          </span>   an image to edit.
           </p>
        {error && <p>{error}</p>}
        {modalOpen && <div className="overlay">
