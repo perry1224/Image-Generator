@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
 body {
   margin: 0;
   padding: 0;
@@ -7,6 +9,7 @@ body {
   color: #777;
   display: flex;
   justify-content: center;
+  font-family: 'Rubik', sans-serif;
 
 }
 
@@ -48,12 +51,6 @@ body {
   width: 90%;
   font-weight: 200;
 }
-
-.input-container input :placeholder {
-  color: #cacaca;
-  font-weight: 200;
-}
-
 .input-container button {
   width: 30%;
   border: none;
@@ -62,7 +59,15 @@ body {
   color:#777;
   font-weight: bold;
   cursor: pointer;
+  font-family: 'Rubik', sans-serif;
 }
+
+.input-container input ::placeholder {
+  color: #cacaca;
+  font-weight: 200;
+}
+
+
 
 .input-container button:active {
   background-color: #cacaca;

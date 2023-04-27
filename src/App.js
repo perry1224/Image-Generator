@@ -45,17 +45,24 @@ const App = () => {
   return (
     <div className="App">
       <section className="search-section">
+        <h1>Perry's Image Generator</h1>
         <p>Start with a detailed description 
         <span className="surprise" onClick={surpriseMe}>Surprise me</span>
         </p>
         <div className="input-container">
           <input 
           value = {value}
-          placeholder="Use your imagination"
+          placeholder="Use your imagination...."
           onChange={e => setValue(e.target.value)}
           />
           <button onClick={getImages}>Generate</button>
         </div>
+        <p className="extra-info">Or,  
+        <span>
+          <label htmlFor="files"> upload an image </label>
+          <input id="files" accept="image/*" type="file" hidden/>
+          </span> to edit.
+          </p>
        {error && <p>{error}</p>}
       </section>
       <section className="image-section">
