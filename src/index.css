@@ -5,12 +5,17 @@ body {
   padding: 0;
   width: 100vw;
   height: 100vh;
-  background-color: azure;
+  background-image: url(/wallpaper.png);
+  background-size: cover;
   color: #777;
   display: flex;
   justify-content: center;
   font-family: 'Rubik', sans-serif;
 
+}
+
+.typewriter  {
+  font-size: 100px ;
 }
 
 .search-section {
@@ -32,6 +37,10 @@ body {
   font-weight: 600;
   padding: 4px 12px;
   margin: 0 0 2px 5px
+}
+
+.surprise:hover {
+  cursor:pointer;
 }
 
 .input-container {
@@ -111,6 +120,16 @@ p {
   z-index: 10;
 }
 
+label {
+  background-color: white;
+  border-radius: 5px;
+}
+
+label:hover {
+  color: rgb(0, 0, 0);
+  box-shadow: 0 5px 10px #ffffff;
+}
+
 .modal {
   position: relative;
   z-index: 100;
@@ -133,8 +152,8 @@ p {
 }
 
 .img-container {
-  height: 512px;
-  width: 512px;
+  max-height: 512px;
+  max-width: 512px;
   overflow: hidden;
 }
 

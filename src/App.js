@@ -1,5 +1,6 @@
 import { useState } from "react"
 import Modal from "./components/Modal"
+import Typewriter from 'typewriter-effect';
 
 const App = () => {
   const [images, setImages] = useState (null)
@@ -7,10 +8,12 @@ const App = () => {
   const [error, setError] = useState(null)
   const [selectedImage, setSelectedImage] = useState(null)
   const [modalOpen, setModalOpen] = useState(false)
+
   const surpriseOptions = [
     'A blue ostrich eating melon',
     'Cartoon drawing of a green Tokyo tower',
-    'A pineapple sunbathing on an island'
+    'A pineapple sunbathing on an island',
+    'Rainbow french croissant',
   ]
 
   const surpriseMe = () => {
@@ -91,7 +94,15 @@ const generateVariations = async() => {
   return (
     <div className="App">
       <section className="search-section">
-        <h1>Perry's Image Generator</h1>
+      <Typewriter className="typewriter"
+          onInit={(typewriter) => {
+            typewriter
+              .typeString("Welcome to Perry's Image Generator")
+              .pauseFor(1000)
+              .start();
+          }}
+          
+        />
         <p>Start with a detailed description 
         <span className="surprise" onClick={surpriseMe}>Surprise me</span>
         </p>
