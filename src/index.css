@@ -93,6 +93,52 @@ p {
   flex-grow: 1;
 }
 
+.extra-info {
+  text-align: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.15);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.modal {
+  position: relative;
+  z-index: 100;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  display:flex;
+  flex-direction: column;
+}
+
+.modal button {
+  width: 100%;
+  padding: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.modal button:active {
+  background-color: #fafafc;
+}
+
+.img-container {
+  height: 512px;
+  width: 512px;
+  overflow: hidden;
+}
+
+
 @media (max-width: 556px) {
 
   .image-section img {
